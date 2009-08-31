@@ -1,0 +1,12 @@
+[Header]
+GameVersion=99
+Signature=h5nc
+FileType=65
+
+[CustomConst]
+//以下编号必须为从1开始的连续数字
+//脚本中使用$[XXX]即可代替序号-1的数字，常用于Function的指定
+//建议保留头两条jump来方便进行跳转
+Type_1=jump1
+Type_2=jump2
+Type_3=ExtendedScript

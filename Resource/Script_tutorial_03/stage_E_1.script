@@ -1,0 +1,156 @@
+DES_GOBSTG_SCRIPTFILE 99
+
+STAGEFILE
+
+// 第七讲，HelloStage
+
+// 每个Stage应该包括关卡、白血、对话、红血、最终红血五个部分
+
+/////////////////////////////////////////////
+
+# 100 // 关卡
+
+@ 1
+
+BGSETUP 0 0x0100 true
+BGSETUP 4 0x0140 true
+
+ENTEXASSIGN 24 24 24 24
+SETPPOWER 0
+
+@ @@% 60
+
+EB 0x0100 0xff
+	RAND % 80 + 180 0 9000 2.5
+	0 5 8 0x00000100
+	
+@ 600
+
+SETTIME 0
+SETSCENE 104
+
+///////////
+
+# 104	// 白血
+
+@ 1
+
+EB 0x0180 40
+	440 0 9000 0.0
+	40 120 8 0x00000000
+BOSSUP
+
+//////////
+
+# 108	// 对话
+
+@ 1
+
+BGSETUP 4 0x0180 true
+
+EB 0x0001 40
+	TX 40 TY 40 9000 0.0
+	40 60 8 0x00000000
+// 注意衔接使用目标作为BOSS位置
+
+@ @@> 0
+
+SD [player1] CHARA * 2
+CHATON CHARA
+	player1 12 true
+	player1 true "您好。"
+	12 false "你好。"
+CHATOFF
+
+IF CHATI - 0xff !
+{
+	SETTIME 0
+	SETSCENE 112
+}
+
+///////////
+# 112	// 红血
+
+@ 0
+
+BGSETUP 8 0 true
+
+@ 0xffff
+
+EXECUTE CT_SCENE 0x0120 0xffff
+
+@ 1
+
+IF MODE - 3 !
+{
+	SETPPOWER 80
+}
+
+BGSETUP 0 0x0100 false
+BGSETUP 4 0x0190 true
+BGSETUP 8 0x0120 true
+ENTEXASSIGN	24 24 24 24
+
+RANGEUP 40 220 120
+
+EB 0x0182 40
+	TX 40 TY 40 9000 0.0
+	40 80 60 0x00000150
+
+BOSSUP
+
+////////////
+
+# 116	// 最终红血
+
+@ 0
+
+BGSETUP 8 0 true
+
+@ 0xffff
+
+EXECUTE CT_SCENE 0x0120 0xffff
+
+@ 1
+
+IF MODE - 3 !
+{
+	SETPPOWER 80
+}
+
+BGSETUP 0 0x0100 false
+BGSETUP 4 0x0190 false
+// 注意这里由于已经切换音乐，所以使用false表示非强制
+// 非强制在领域界练习时起到作用，发起音乐
+BGSETUP 8 0x0120 true
+ENTEXASSIGN	24 24 24 24
+
+RANGEUP 40 220 120
+
+EB 0x0184 40
+	TX 40 TY 40 9000 0.0
+	40 80 4096 0x00000150
+
+BOSSUP
+
+// 请观察本子关卡对应的RANGEDEFINE，是连入下一关的最后一个领域界
+// 并且这个领域界是一个等待领域界，所以设置BOSS无敌就可以了
+// 连接大关卡的方法只有领域界，经过本关结算就可以进入规定的子关卡了
+
+// 通过之后可以用练习模式进行完整的单关练习
+
+///////////////
+
+# 200	// 第二关
+
+@ @@% 60
+
+EB 0x0100 0xff
+	RAND % 80 + 180 0 9000 2.5
+	0 5 4096 0x00000100
+
+// 无限创建无敌的敌人，可以通过撞死来观察结算
+
+//本教程结束，请进入乱难度
+
+@ 1

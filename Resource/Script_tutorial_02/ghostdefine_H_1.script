@@ -1,0 +1,22 @@
+DES_GOBSTG_SCRIPTFILE 99
+
+EDEFFILE
+
+//////////
+# 0xA100	// 领域界使魔
+
+@ @@% 60
+
+B GHX GHY
+	false 0 2.5
+	8 1 8 0 0xff
+
+//////////
+# 0xA101	// 领域界使魔
+
+@ @@%]% 60 30 5
+// 仅通过改变TimeFunction来使弹幕改变
+
+B GHX GHY
+	false 0 2.5
+	8 0 8 0 0xff

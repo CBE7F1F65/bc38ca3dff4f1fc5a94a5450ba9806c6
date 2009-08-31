@@ -1,0 +1,75 @@
+DES_GOBSTG_SCRIPTFILE 99
+
+STAGEFILE
+
+// 第六讲，HelloRange
+
+/////////////////////////////////////////////
+
+# 102	// 普通关卡入口
+
+@ 1
+
+BGSETUP 0 0x0100 true
+BGSETUP 4 0x0190 true
+
+ENTEXASSIGN	24 24 24 24
+
+EB 0x0001 40
+	0 0 9000 0.0
+	40 80 120 0x00000000
+
+SETPPOWER 80
+	
+@ 120
+
+SETTIME 0
+SETSCENE 114
+
+// 在第120帧的时候直接跳转到114子关卡，在RANGEDEFINE中被定义为领域界
+
+# 114
+
+@ 0
+// 白血和红血完全结束后都会调用0，在此设定相应事件
+
+BGSETUP 8 0 true
+// 关闭领域界的专用场景
+
+@ 0xffff
+// BOSS被击破或时间到会调用一次0xffff，在此设定相应事件
+
+EXECUTE CT_SCENE 0x0120 0xffff
+// 调用执行SCENEFILE中的约束名字为0x0120，约束条件为0xffff的脚本
+// 作用是执行淡化退出领域界专用场景
+
+@ 1
+// 正常的初识帧
+
+IF MODE - 3 !
+// 这是为了在领域界模式中设定特殊的Power
+{
+	SETPPOWER 80
+}
+
+BGSETUP 0 0x0100 false
+BGSETUP 4 0x0190 false
+BGSETUP 8 0x0120 true
+// 设置领域界专属的场景0x0120
+ENTEXASSIGN	24 24 24 24
+// 重写本句不会带来危险
+
+RANGEUP 40 220 120
+// 规定在领域界模式下BOSS的起始位置
+
+EB 0x2180 40
+	TX 40 TY 40 9000 0.0
+	40 80 16 0x00000150
+
+BOSSUP
+// 领域界同样需要此句话
+
+// 可以通过选择Range模式进入领域界练习，查看领域界练习与正常玩法的不同
+// 本教程完毕，请更换ScriptFolder为Script_tutorial_03，进行战难度
+
+@ 1

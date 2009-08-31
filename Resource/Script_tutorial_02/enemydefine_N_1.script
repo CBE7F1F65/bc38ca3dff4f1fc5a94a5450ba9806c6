@@ -1,0 +1,21 @@
+DES_GOBSTG_SCRIPTFILE 99
+
+EDEFFILE
+
+///////////////
+# 0x1180	// BOSS
+
+@ 1
+
+EA 5 41
+	60 220 120 60
+// 设置BOSS的随机移动，周期为60
+
+@ @@% 90
+
+BC 8 false
+	ENX ENY 1.5
+	9 5 16 0
+// 开火
+
+@ 1

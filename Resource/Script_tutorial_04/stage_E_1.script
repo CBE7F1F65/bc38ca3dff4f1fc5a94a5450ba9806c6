@@ -1,0 +1,103 @@
+DES_GOBSTG_SCRIPTFILE 99
+
+STAGEFILE
+
+// 第十讲，子弹运行参数
+
+/////////////////////////////////////////////
+
+# 100 // 跳跃用
+
+////////jump/////////
+ 
+ @ 20
+ 
+ CALL $jump2 DIFFI
+// 执行自定义函数jump2，这个是跳跃模板，参考function.script的实现，可以通过它很快到达其他约束名字
+// 使用DIFFI作为参数，可以自适应难度，进入合适的约束条件中
+ 
+////////jump/////////
+
+# 200 // 关卡
+
+@ @@> 0
+
+SETPBINFI
+
+@ 1
+
+BGSETUP 0 0x0100 true
+BGSETUP 4 0x0140 true
+
+ENTEXASSIGN 24 24 24 24
+
+@ @@%<% 900 300 60
+// 在每900秒的前300秒中的每60秒
+
+A 9
+	TIMEREQUAL 90 TYPESET 10
+	TIMERRANGE 120 150 ANGLESETADD 600
+// 第一行的参数表示了之后参数的个数，本例为9
+// 之后的每一行都是前半句条件和后半句处理组成
+// 第一句是，当子弹时间到达90时，设置其子弹类型为10
+// 第二句是，挡子弹时间在120和150之间时，每帧增加角度600
+// 在本方法后创建的所有子弹都将遵循这个规律进行变化
+BC 12 true
+	220 240 1.5
+	9 0 8 0
+// 此段子弹受运行参数影响
+A 0
+// 这是一个好习惯，在使用完参数池之后将其清空
+// 本句后创建的所有子弹都将不受上述规律变化
+
+@ @@%[<%<% 900 300 600 80 50 5
+
+A 12
+	TIMERLESS 60 SPEEDSETADD -4
+	TIMEREQUAL 90 AND COLOREQUAL 0 THEN ANGLESETAMAP 0
+// 第二句是一个逻辑与关系，条件可以用AND联系起来，同时使用THEN表示逻辑结束，开始处理
+// 可以看到只有红色子弹转化成自机狙
+B 220 120
+	false RANDR 90 4.0
+	0 RAND % 2 8 0 0xff
+A 0
+
+@ @@%= 900 600
+
+SD [_0] 0
+
+A 5
+	TIMERLESS 360 BOUNCE 40 4096
+// 一颗在边缘距40处反弹很多次的运动，但仅限于360帧以内
+B 220 120
+	true RANDA 2.5
+	40 0 16 0 _0
+// 该子弹绑定了目标，目标ID存在系统变量_0中
+A 0
+
+BUDECANCEL BUI
+// 设置本子弹的被取消属性为不可被取消，碰撞或者玩家使用领域界不会造成子弹消失
+// 刚创建出来的子弹为被操纵子弹，故编号为BUI
+
+@ @@%[%]% 900 600 50 40 5
+
+A 24
+	TIMEREQUAL 60 SPEEDSET 0
+	TIMERRANGE 60 90 CHASE _0 90
+	TIMEREQUAL 90 TYPESET 35
+	TIMERRANGE 90 120 SPEEDSETADD -5
+	TIMEREQUAL 120 CALLSCRIPT $ExtendedScript 1
+// 子弹运行参数池最高不能超过31个，但如果要进行扩展，可以调用CALLSCRIPT处理
+// 这个等同于在满足条件下的CALL，在对应的自定义脚本上规定了更替子弹运行参数的操作
+// 注意，在子弹运行参数值的地方插入BU@、BUI、RAND等函数是无效的，因为公共运行参数池仅存储一个数据，不具有多变性
+// 在FUNCTIONFILE中讲解了如何配置随机
+
+BC 5 true
+	220 120 1.5
+	10 0 8 0
+
+A 0
+
+//全教程结束，请设置RESOURCE中ScriptFolder为Script/，DataFolder为Data/详细查看叛境东方游0x060脚本
+
+@ 1

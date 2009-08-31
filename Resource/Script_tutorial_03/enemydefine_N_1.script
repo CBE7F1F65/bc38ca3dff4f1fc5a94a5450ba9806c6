@@ -1,0 +1,29 @@
+DES_GOBSTG_SCRIPTFILE 99
+
+EDEFFILE
+
+///////////////
+# 0x1100	// 中央小兵
+
+@ 120
+
+SD [i] 3
+LOOP [i]
+{
+	SD [totalGhost] i + 2
+	SD [j] totalGhost
+	LOOP [j]
+	{
+		SD [r] i * 30 + 40
+		GB 0x8000 0xff ENI
+			ENX ENY 36000 / totalGhost * j i + 1 *f 1.5
+			0 2 SIGN i * r
+// 这里通过36000 / totalGhost得到把圆周等分的每一份值，乘以循环变量j可以得到每个分角应该在的角度
+// 注意，计算速度仍旧是从左到右的运算顺序，先加法后浮点乘法
+// 使用SIGN返回正负，表示正转和反转
+	}
+}
+
+// 这是一个双重嵌套的循环，注意循环变量应该不同
+
+@ 1

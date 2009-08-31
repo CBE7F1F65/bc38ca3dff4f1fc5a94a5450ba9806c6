@@ -1,0 +1,32 @@
+DES_GOBSTG_SCRIPTFILE 99
+
+EDEFFILE
+
+//////////
+# 0x8100 // 非光环下的使魔
+
+@ 60
+
+BEB GHX GHY
+	0 4.5 13 0
+	100 true true 400 0xff
+//创建一个停留400帧的横向Beam
+
+BEHOLD BEI _2 9000
+// 立即让这个Beam被2号目标抓起，方向为9000
+// 由于BEB方法导致BEI的更新，所以取到的BEI值即为当前的Beam
+
+//////////
+# 0x8101 // 光环下的使魔
+
+@ 60
+
+BEB GHX GHY
+	0 4.5 13 0
+	100 true true 400 0xff
+// 创建过程相同
+
+BEPIN BEI _1 _2
+// 立刻被敌人（目标1）抓起并指向敌人的使魔（目标2）
+
+@ 1

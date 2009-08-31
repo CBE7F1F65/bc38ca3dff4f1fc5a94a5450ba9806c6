@@ -1,0 +1,63 @@
+DES_GOBSTG_SCRIPTFILE 99
+
+FUNCTIONFILE
+
+///////////////
+
+# $jump1	//第一重跳跃
+
+@ 0
+
+SETTIME 0
+SETSCENE 100
+SETPPOWER 128
+
+@ 1
+
+SETTIME 0
+SETSCENE 101
+SETPPOWER 128
+
+@ 2
+SETTIME 0
+SETSCENE 102
+SETPPOWER 128
+
+////////////////////
+# $jump2	//第二重跳跃
+
+@ 0
+
+SETTIME 0
+SETSCENE 200
+SETPPOWER 128
+
+@ 1
+
+SETTIME 0
+SETSCENE 201
+SETPPOWER 128
+
+@ 2
+
+SETTIME 0
+SETSCENE 202
+SETPPOWER 128
+
+/////////////////
+# $ExtendedScript	// 扩展移动
+
+@ 1
+
+ACONTROL BUI 20
+	TIMEREQUAL BU@ + 1 SPEEDSET RAND % 80 + 100
+	TIMEREQUAL BU@ + 1 COLORSET RAND % 2 + 6
+	TIMEREQUAL BU@ + 30 TYPESET 4
+	TIMEREQUAL BU@ + 50 AND YLESS 160 THEN ANGLESETAMAP 0
+
+// 使用BU@可以保证在更改主脚本进入CALLSCRIPT时间之际不需要逐一替换这个脚本中的参数
+// 注意，运行参数通过TIMEREQUAL走入本区时，子弹时间已经是BU@了，所以为了让更替参数池产生效果，最少需要从BU@+1时间开始设置
+// 本方法仅仅影响当前操作的子弹（BUI）的参数池，不影响公共参数池，所以不需要置0操作
+// 由于每个子弹进入都会执行本函数改变其对应的参数池，所以可以通过随机设置产生随机效果
+
+@ 1
