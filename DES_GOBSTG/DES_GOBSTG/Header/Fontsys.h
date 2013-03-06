@@ -1,8 +1,8 @@
 #ifndef _FONTSYS_H
 #define _FONTSYS_H
 
-#include "MainDependency.h"
-#include "Const.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
 
 #define FONTSYS_CHATUSE			FONTSYSMAX-2
 #define FONTSYS_RANGENAMEUSE	FONTSYSMAX-1

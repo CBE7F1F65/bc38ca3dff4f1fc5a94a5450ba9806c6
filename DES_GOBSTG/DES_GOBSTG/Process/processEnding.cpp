@@ -1,10 +1,10 @@
-#include "Process.h"
-#include "BGLayer.h"
-#include "Player.h"
-#include "Scripter.h"
-#include "Data.h"
-#include "Selector.h"
-#include "InfoSelect.h"
+#include "../Header/Process.h"
+#include "../Header/BGLayer.h"
+#include "../Header/Player.h"
+#include "../Header/Scripter.h"
+#include "../Header/Data.h"
+#include "../Header/Selector.h"
+#include "../Header/InfoSelect.h"
 
 int Process::processEnding()
 {

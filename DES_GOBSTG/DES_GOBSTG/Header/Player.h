@@ -1,11 +1,11 @@
 #ifndef _PLAYER_H
 #define _PLAYER_H
 
-#include "BObject.h"
-#include "EffectSp.h"
-#include "PlayerGhost.h"
-#include "PlayerBullet.h"
-#include "Effectsys.h"
+#include "../Header/BObject.h"
+#include "../Header/EffectSp.h"
+#include "../Header/PlayerGhost.h"
+#include "../Header/PlayerBullet.h"
+#include "../Header/Effectsys.h"
 
 #define PL_DEFAULTNBOMB		3
 #define PL_DEFAULTNPLAYER	RESCONFIGDEFAULT_MAXPLAYER

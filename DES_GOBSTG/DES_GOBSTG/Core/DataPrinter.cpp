@@ -1,5 +1,5 @@
-#include "DataPrinter.h"
-#include "Data.h"
+#include "../Header/DataPrinter.h"
+#include "../Header/Data.h"
 
 replayFrame DataPrinter::rpyframe[M_SAVEINPUTMAX];
 partInfo DataPrinter::partinfo[RPYPARTMAX];

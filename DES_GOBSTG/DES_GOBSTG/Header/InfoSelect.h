@@ -1,8 +1,8 @@
 #ifndef _INFOSELECT_H
 #define _INFOSELECT_H
 
-#include "MainDependency.h"
-#include "Const.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
 
 //infoselect colortype
 #define	INFO_GREEN		0

@@ -19,7 +19,7 @@
 #define RES_RESOURCE	1
 #define RES_TEXTURE		2
 #define RES_EFFECT		3
-#define RES_MUSIC		4
+//#define RES_MUSIC		4
 #define RES_STREAM		5
 #define RES_TARGET		6
 #define RES_SPRITE		7
@@ -68,7 +68,7 @@ struct REffect : public ResDesc
 	virtual DWORD Get(hgeResourceManager *rm);
 	virtual void  Free();
 };
-
+/*
 struct RMusic : public ResDesc
 {
 	char		  filename[MAXRESCHARS];
@@ -78,7 +78,7 @@ struct RMusic : public ResDesc
 	virtual DWORD Get(hgeResourceManager *rm);
 	virtual void  Free();
 };
-
+*/
 struct RStream : public ResDesc
 {
 	char		  filename[MAXRESCHARS];

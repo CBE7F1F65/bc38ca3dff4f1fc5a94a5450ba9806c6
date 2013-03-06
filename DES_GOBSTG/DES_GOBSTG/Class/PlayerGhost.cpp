@@ -1,7 +1,7 @@
-#include "PlayerGhost.h"
-#include "Player.h"
-#include "Main.h"
-#include "Process.h"
+#include "../Header/PlayerGhost.h"
+#include "../Header/Player.h"
+#include "../Header/Main.h"
+#include "../Header/Process.h"
 
 HTEXTURE PlayerGhost::tex;
 

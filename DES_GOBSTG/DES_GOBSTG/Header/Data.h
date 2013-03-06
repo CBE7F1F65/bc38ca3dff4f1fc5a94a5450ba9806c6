@@ -1,8 +1,8 @@
 #ifndef _DATA_H
 #define _DATA_H
 
-#include "MainDependency.h"
-#include "Const.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
 
 #define DATASTR_TOTAL_RUNTIME			"总启动时间"
 #define DATASTR_TOTAL_GAMETIME			"总游戏时间"

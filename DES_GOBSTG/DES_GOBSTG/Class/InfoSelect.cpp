@@ -1,8 +1,8 @@
-#include "InfoSelect.h"
-#include "SE.h"
-#include "FontSys.h"
-#include "Main.h"
-#include "Process.h"
+#include "../Header/InfoSelect.h"
+#include "../Header/SE.h"
+#include "../Header/FontSys.h"
+#include "../Header/Main.h"
+#include "../Header/Process.h"
 
 list<InfoSelect>infoselect;
 

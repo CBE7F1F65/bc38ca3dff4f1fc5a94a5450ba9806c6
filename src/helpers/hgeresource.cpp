@@ -184,7 +184,7 @@ HEFFECT hgeResourceManager::GetEffect(const char *name)
 
 	return 0;
 }
-
+/*
 HMUSIC hgeResourceManager::GetMusic(const char *name)
 {
 	HMUSIC reshandle;
@@ -209,7 +209,7 @@ HMUSIC hgeResourceManager::GetMusic(const char *name)
 
 	return 0;
 }
-
+*/
 HSTREAM hgeResourceManager::GetStream(const char *name)
 {
 	HSTREAM reshandle;

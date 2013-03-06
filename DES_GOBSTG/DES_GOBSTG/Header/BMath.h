@@ -9,7 +9,7 @@
 
 #include <math.h>
 
-#include "Const.h"
+#include "../Header/Const.h"
 
 	#ifdef BUSE_MATHTABLE
 

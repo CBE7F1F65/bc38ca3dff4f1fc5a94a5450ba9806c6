@@ -1,10 +1,10 @@
 #ifndef _BOSSINFO_H
 #define _BOSSINFO_H
 
-#include "MainDependency.h"
-#include "InfoQuad.h"
-#include "Const.h"
-#include "Effectsys.h"
+#include "../Header/MainDependency.h"
+#include "../Header/InfoQuad.h"
+#include "../Header/Const.h"
+#include "../Header/Effectsys.h"
 
 #define BOSSINFO_ENABLE		1
 #define BOSSINFO_UP			2

@@ -27,7 +27,7 @@
 #define PB_HEADARCPLUS			10
 
 
-#include "BObject.h"
+#include "../Header/BObject.h"
 
 class PlayerBullet : public BObject
 {

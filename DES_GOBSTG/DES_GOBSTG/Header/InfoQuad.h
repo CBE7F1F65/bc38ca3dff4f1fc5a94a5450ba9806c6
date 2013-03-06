@@ -1,7 +1,7 @@
 #ifndef _INFOQUAD_H
 #define _INFOQUAD_H
 
-#include "MainDependency.h"
+#include "../Header/MainDependency.h"
 
 #define	IQB_BOSSLIFE	0x01
 #define	IQB_OTHER		0x04

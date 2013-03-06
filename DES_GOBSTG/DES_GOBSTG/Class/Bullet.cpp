@@ -1,10 +1,10 @@
-#include "Bullet.h"
-#include "Player.h"
-#include "SE.h"
-#include "Item.h"
-#include "BossInfo.h"
-#include "Scripter.h"
-#include "Main.h"
+#include "../Header/Bullet.h"
+#include "../Header/Player.h"
+#include "../Header/SE.h"
+#include "../Header/Item.h"
+#include "../Header/BossInfo.h"
+#include "../Header/Scripter.h"
+#include "../Header/Main.h"
 
 RenderDepth Bullet::renderDepth[BULLETTYPEMAX];
 

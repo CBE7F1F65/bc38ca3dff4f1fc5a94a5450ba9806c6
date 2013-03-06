@@ -1,8 +1,8 @@
 #ifndef _GHOST_H
 #define _GHOST_H
 
-#include "BObject.h"
-#include "Effectsys.h"
+#include "../Header/BObject.h"
+#include "../Header/Effectsys.h"
 
 #define GHOST_COLLISIONR	8
 

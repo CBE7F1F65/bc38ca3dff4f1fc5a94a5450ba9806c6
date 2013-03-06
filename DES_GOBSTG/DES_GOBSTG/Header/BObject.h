@@ -1,9 +1,9 @@
 #ifndef _OBJECT_H
 #define _OBJECT_H
 
-#include "MainDependency.h"
-#include "Const.h"
-#include "BMath.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
+#include "../Header/BMath.h"
 
 #define BOBJ_M_CHASEAIM_SPEEDMIN	0.1f
 

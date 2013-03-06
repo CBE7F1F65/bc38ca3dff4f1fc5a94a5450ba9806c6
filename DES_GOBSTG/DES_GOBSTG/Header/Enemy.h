@@ -1,9 +1,9 @@
 #ifndef _ENEMY_H
 #define _ENEMY_H
 
-#include "BObject.h"
-#include "EffectSp.h"
-#include "Effectsys.h"
+#include "../Header/BObject.h"
+#include "../Header/EffectSp.h"
+#include "../Header/Effectsys.h"
 
 #define ENEMY_INDEXSTART	4
 #define ENEMY_MAINBOSSINDEX	0

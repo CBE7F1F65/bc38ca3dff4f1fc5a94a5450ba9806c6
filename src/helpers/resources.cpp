@@ -345,7 +345,7 @@ void RScript::Parse(hgeResourceManager *rm, RScriptParser *sp, const char *sname
 							case RES_RESOURCE:	RResource::Parse(rm, np, name, basename); break;
 							case RES_TEXTURE:	RTexture::Parse(rm, np, name, basename); break;
 							case RES_EFFECT:	REffect::Parse(rm, np, name, basename); break;
-							case RES_MUSIC:		RMusic::Parse(rm, np, name, basename); break;
+//							case RES_MUSIC:		RMusic::Parse(rm, np, name, basename); break;
 							case RES_STREAM:	RStream::Parse(rm, np, name, basename); break;
 							case RES_TARGET:	RTarget::Parse(rm, np, name, basename);	break;
 							case RES_SPRITE:	RSprite::Parse(rm, np, name, basename);	break;
@@ -474,7 +474,7 @@ void REffect::Free()
 }
 
 /////////////// RMusic //
-
+/*
 void RMusic::Parse(hgeResourceManager *rm, RScriptParser *sp, const char *name, const char *basename)
 {
 //	ScriptParseFileResource(rm, sp, name, basename, new RMusic(), RES_MUSIC);
@@ -538,7 +538,7 @@ void RMusic::Free()
 	if(handle) hge->Music_Free((HMUSIC)handle);
 	handle=0;
 }
-
+*/
 /////////////// RStream //
 
 void RStream::Parse(hgeResourceManager *rm, RScriptParser *sp, const char *name, const char *basename)

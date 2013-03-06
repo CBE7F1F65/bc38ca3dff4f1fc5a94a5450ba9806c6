@@ -1,5 +1,5 @@
-#include "MainDependency.h"
-#include "Export.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Export.h"
 
 #pragma init_seg(lib)
 

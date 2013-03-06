@@ -1,7 +1,7 @@
 #ifndef _DATACONNECTOR_H
 #define _DATACONNECTOR_H
 
-#include "MainDependency.h"
+#include "../Header/MainDependency.h"
 
 class DataConnector{
 public:

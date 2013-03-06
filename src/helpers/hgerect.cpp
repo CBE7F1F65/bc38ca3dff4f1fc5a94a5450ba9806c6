@@ -8,7 +8,7 @@
 
 
 #include "..\..\include\hgerect.h"
-#include "hge.h"
+#include "../../include/hge.h"
 
 
 void hgeRect::Encapsulate(float x, float y)

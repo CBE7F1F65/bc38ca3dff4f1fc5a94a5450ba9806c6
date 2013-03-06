@@ -1,7 +1,7 @@
 #ifndef _REPLAY_H
 #define _REPLAY_H
 
-#include "Export.h"
+#include "../Header/Export.h"
 
 class Replay
 {

@@ -1,6 +1,6 @@
-#include "EffectSp.h"
-#include "Player.h"
-#include "Enemy.h"
+#include "../Header/EffectSp.h"
+#include "../Header/Player.h"
+#include "../Header/Enemy.h"
 
 HTEXTURE EffectSp::tex;
 BYTE EffectSp::evtype;

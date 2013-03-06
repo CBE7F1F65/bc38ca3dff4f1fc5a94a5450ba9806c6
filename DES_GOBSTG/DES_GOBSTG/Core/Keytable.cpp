@@ -1,11 +1,11 @@
-#include "Keytable.h"
-#include "Scripter.h"
-#include "Bullet.h"
-#include "InfoSelect.h"
-#include "SE.h"
-#include "Process.h"
-#include "BGLayer.h"
-#include "Data.h"
+#include "../Header/keytable.h"
+#include "../Header/Scripter.h"
+#include "../Header/Bullet.h"
+#include "../Header/InfoSelect.h"
+#include "../Header/SE.h"
+#include "../Header/Process.h"
+#include "../Header/BGLayer.h"
+#include "../Header/Data.h"
 
 scrKeyWord scrKeyTable[] =
 {

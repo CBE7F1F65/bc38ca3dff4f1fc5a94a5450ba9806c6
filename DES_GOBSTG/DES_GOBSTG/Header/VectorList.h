@@ -90,6 +90,7 @@ public:
 	_Ty * push_back(const _Ty & _item)
 	{
 		memcpy(push_back(), &_item, sizeof(_Ty));
+		return &item[iend];
 	}
 	_Ty * push_front()
 	{

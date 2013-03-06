@@ -1,8 +1,8 @@
 #ifndef _SE_H
 #define _SE_H
 
-#include "MainDependency.h"
-#include "Const.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
 
 #define SE_DEFAULT				0
 

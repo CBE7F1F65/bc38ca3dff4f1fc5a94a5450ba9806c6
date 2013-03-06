@@ -1,9 +1,9 @@
 #ifndef _CHAT_H
 #define _CHAT_H
 
-#include "MainDependency.h"
-#include "Const.h"
-#include "BGLayer.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
+#include "../Header/BGLayer.h"
 
 #define CHATTEXMAX	4
 #define CHATTERMAX	5

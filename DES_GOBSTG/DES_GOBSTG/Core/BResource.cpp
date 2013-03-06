@@ -1,5 +1,5 @@
-#include "BResource.h"
-#include "data.h"
+#include "../Header/BResource.h"
+#include "../Header/Data.h"
 
 BResource res;
 char BResource::scriptfolder[M_SCRIPTFOLDERMAX][M_STRMAX];

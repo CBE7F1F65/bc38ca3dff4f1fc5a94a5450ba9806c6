@@ -1,9 +1,9 @@
-#include "Process.h"
-#include "BGLayer.h"
-#include "SE.h"
-#include "Selector.h"
-#include "InfoSelect.h"
-#include "Scripter.h"
+#include "../Header/Process.h"
+#include "../Header/BGLayer.h"
+#include "../Header/SE.h"
+#include "../Header/Selector.h"
+#include "../Header/InfoSelect.h"
+#include "../Header/Scripter.h"
 
 int Process::processDifficultSelect()
 {

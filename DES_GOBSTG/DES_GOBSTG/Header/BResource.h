@@ -1,8 +1,8 @@
 #ifndef _BRESOURCE_H
 #define _BRESOURCE_H
 
-#include "MainDependency.h"
-#include "Const.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
 
 struct musicData{
 	char musicname[M_STRMAX];

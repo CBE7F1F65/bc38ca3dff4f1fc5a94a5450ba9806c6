@@ -4,19 +4,19 @@
 #include <windows.h>
 #include <list>
 #include <vector>
-#include <VectorList.h>
+#include "VectorList.h"
 #include <io.h>
 #include <assert.h>
 
 using namespace std;
 
-#include "hge.h"
-#include "hgefont.h"
-#include "hgesprite.h"
-#include "hgeparticle.h"
-#include "hgeeffectsystem.h"
+#include "../../../include/hge.h"
+#include "../../../include/hgefont.h"
+#include "../../../include/hgesprite.h"
+#include "../../../include/hgeparticle.h"
+#include "../../../include/hgeeffectsystem.h"
 
-#include "BMath.h"
+#include "../Header/BMath.h"
 
 #pragma warning(disable:4244)
 #pragma warning(disable:4800)

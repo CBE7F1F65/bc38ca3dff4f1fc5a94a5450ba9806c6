@@ -1,10 +1,10 @@
-#include "Chat.h"
-#include "BGLayer.h"
-#include "Player.h"
-#include "Bullet.h"
-#include "Fontsys.h"
-#include "Main.h"
-#include "Process.h"
+#include "../Header/Chat.h"
+#include "../Header/BGLayer.h"
+#include "../Header/Player.h"
+#include "../Header/Bullet.h"
+#include "../Header/Fontsys.h"
+#include "../Header/Main.h"
+#include "../Header/Process.h"
 
 Chat chat;
 HTEXTURE Chat::tex[CHATTEXMAX];

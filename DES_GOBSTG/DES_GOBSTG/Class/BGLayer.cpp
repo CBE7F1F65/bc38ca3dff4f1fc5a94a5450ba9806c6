@@ -1,5 +1,5 @@
-#include "BGLayer.h"
-#include "Main.h"
+#include "../Header/BGLayer.h"
+#include "../Header/Main.h"
 
 BGLayer * ubg[UBGLAYERMAX];
 BGLayerSet BGLayer::set[BGLAYERSETMAX];

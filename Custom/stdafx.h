@@ -40,7 +40,7 @@
 
 #include <Mmsystem.h>
 #include <WinBase.h>
-#include "Export.h"
+#include "../DES_GOBSTG/DES_GOBSTG/Header/Export.h"
 #pragma comment(lib, "winmm.lib")
 
 #endif // _AFX_NO_AFXCMN_SUPPORT

@@ -1,7 +1,7 @@
 #ifndef _BULLET_H
 #define _BULLET_H
 
-#include "BObject.h"
+#include "../Header/BObject.h"
 
 
 #define BULLETACTIONMAX		0x20

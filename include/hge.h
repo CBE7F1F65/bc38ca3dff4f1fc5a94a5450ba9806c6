@@ -20,6 +20,8 @@
 
 #include <windows.h>
 
+typedef unsigned __int64 QWORD;
+
 #define DIRECTINPUT_VERSION 0x0800
 
 #include <dinput.h>			//add by Thor/h5nc
@@ -497,7 +499,7 @@ public:
 	virtual void		CALL	Effect_Free(HEFFECT eff) = 0;
 	virtual HCHANNEL	CALL 	Effect_Play(HEFFECT eff) = 0;
 	virtual HCHANNEL	CALL	Effect_PlayEx(HEFFECT eff, int volume=100, int pan=0, float pitch=1.0f, bool loop=false) = 0;
-
+	/*
 	virtual HMUSIC		CALL	Music_Load(const char *filename, DWORD size=0) = 0;
 	virtual void		CALL	Music_Free(HMUSIC mus) = 0;
 	virtual HCHANNEL	CALL	Music_Play(HMUSIC mus, bool loop, int volume = 100, int order = -1, int row = -1) = 0;
@@ -510,7 +512,7 @@ public:
 	virtual int			CALL	Music_GetInstrVolume(HMUSIC music, int instr) = 0;
 	virtual void		CALL	Music_SetChannelVolume(HMUSIC music, int channel, int volume) = 0;
 	virtual int			CALL	Music_GetChannelVolume(HMUSIC music, int channel) = 0;
-
+	*/
 	virtual HSTREAM		CALL	Stream_Load(const char *filename, DWORD size=0) = 0;
 	virtual void		CALL	Stream_Free(HSTREAM stream) = 0;
 	virtual HCHANNEL	CALL	Stream_Play(HSTREAM stream, bool loop, int volume = 100) = 0;
@@ -525,9 +527,9 @@ public:
 	virtual void		CALL 	Channel_ResumeAll() = 0;
 	virtual void		CALL 	Channel_StopAll() = 0;
 	virtual bool		CALL	Channel_IsPlaying(HCHANNEL chn) = 0;
-	virtual float		CALL	Channel_GetLength(HCHANNEL chn) = 0;
-	virtual float		CALL	Channel_GetPos(HCHANNEL chn) = 0;
-	virtual void		CALL	Channel_SetPos(HCHANNEL chn, float fSeconds) = 0;
+	virtual QWORD		CALL	Channel_GetLength(HCHANNEL chn) = 0;
+	virtual QWORD		CALL	Channel_GetPos(HCHANNEL chn) = 0;
+	virtual void		CALL	Channel_SetPos(HCHANNEL chn, QWORD pos) = 0;
 	virtual void		CALL	Channel_SlideTo(HCHANNEL channel, float time, int volume, int pan = -101, float pitch = -1) = 0;
 	virtual bool		CALL	Channel_IsSliding(HCHANNEL channel) = 0;
 

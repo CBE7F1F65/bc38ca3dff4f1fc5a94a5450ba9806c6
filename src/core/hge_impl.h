@@ -10,7 +10,7 @@
 #ifndef HGE_IMPL_H
 #define HGE_IMPL_H
 
-#include "hge.h"
+#include "../../include/hge.h"
 #include <stdio.h>
 #include <d3d9.h>
 #include <d3dx9.h>
@@ -128,7 +128,7 @@ public:
 	virtual void		CALL	Effect_Free(HEFFECT eff);
 	virtual HCHANNEL	CALL 	Effect_Play(HEFFECT eff);
 	virtual HCHANNEL	CALL 	Effect_PlayEx(HEFFECT eff, int volume=100, int pan=0, float pitch=1.0f, bool loop=false);
-
+	/*
 	virtual HMUSIC		CALL 	Music_Load(const char *filename, DWORD size=0);
 	virtual void		CALL	Music_Free(HMUSIC mus);
 	virtual HCHANNEL	CALL 	Music_Play(HMUSIC mus, bool loop, int volume = 100, int order = 0, int row = 0);
@@ -141,7 +141,7 @@ public:
 	virtual int			CALL	Music_GetInstrVolume(HMUSIC music, int instr);
 	virtual void		CALL	Music_SetChannelVolume(HMUSIC music, int channel, int volume);
 	virtual int			CALL	Music_GetChannelVolume(HMUSIC music, int channel);
-
+	*/
 	virtual HSTREAM		CALL	Stream_Load(const char *filename, DWORD size=0);
 	virtual void		CALL	Stream_Free(HSTREAM stream);
 	virtual HCHANNEL	CALL	Stream_Play(HSTREAM stream, bool loop, int volume = 100);
@@ -156,9 +156,9 @@ public:
 	virtual void		CALL 	Channel_ResumeAll();
 	virtual void		CALL 	Channel_StopAll();
 	virtual bool		CALL	Channel_IsPlaying(HCHANNEL chn);
-	virtual float		CALL	Channel_GetLength(HCHANNEL chn);
-	virtual float		CALL	Channel_GetPos(HCHANNEL chn);
-	virtual void		CALL	Channel_SetPos(HCHANNEL chn, float fSeconds);
+	virtual QWORD		CALL	Channel_GetLength(HCHANNEL chn);
+	virtual QWORD		CALL	Channel_GetPos(HCHANNEL chn);
+	virtual void		CALL	Channel_SetPos(HCHANNEL chn, QWORD pos);
 	virtual void		CALL	Channel_SlideTo(HCHANNEL channel, float time, int volume, int pan = -101, float pitch = -1);
 	virtual bool		CALL	Channel_IsSliding(HCHANNEL channel);
 

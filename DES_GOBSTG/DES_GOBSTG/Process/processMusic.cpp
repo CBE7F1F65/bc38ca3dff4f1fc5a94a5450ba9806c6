@@ -1,8 +1,8 @@
-#include "Process.h"
-#include "InfoSelect.h"
-#include "Scripter.h"
-#include "SE.h"
-#include "BResource.h"
+#include "../Header/Process.h"
+#include "../Header/InfoSelect.h"
+#include "../Header/Scripter.h"
+#include "../Header/SE.h"
+#include "../Header/BResource.h"
 
 int Process::processMusic()
 {

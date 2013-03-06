@@ -1,8 +1,8 @@
 #ifndef _DATAPRINTER_H
 #define _DATAPRINTER_H
 
-#include "MainDependency.h"
-#include "Export.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Export.h"
 
 #define DPS_SCOREFILENAME	"Score"
 #define DPS_EXTENSION		"txt"

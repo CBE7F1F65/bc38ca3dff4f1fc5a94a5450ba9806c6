@@ -1,7 +1,7 @@
 #ifndef _EFFECTSP_H
 #define _EFFECTSP_H
 
-#include "BObject.h"
+#include "../Header/BObject.h"
 
 #define	EFFECT_PLAYERCHANGE		0x01
 #define	EFFECT_PLAYERGRAZE		0x02

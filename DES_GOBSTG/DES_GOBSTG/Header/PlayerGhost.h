@@ -1,7 +1,7 @@
 #ifndef _PLAYERGHOST_H
 #define _PLAYERGHOST_H
 
-#include "BObject.h"
+#include "../Header/BObject.h"
 
 #define PLAYERGHOST_TRACETIME	0x10
 #define PLAYERGHOST_LASTINDEX	1

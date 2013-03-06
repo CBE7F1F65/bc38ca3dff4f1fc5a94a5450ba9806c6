@@ -1,4 +1,4 @@
-#include "Export.h"
+#include "../Header/Export.h"
 
 char Export::resourcefilename[M_PATHMAX];
 char Export::resbinname[M_PATHMAX];
@@ -22,6 +22,7 @@ void Export::Release()
 void Export::clientInitial(bool usesound)
 {
 	hge->Resource_SetPath(DEFAULT_RESOURCEPATH);
+	hge->System_SetState(HGE_BASSDLLFILE, "bass.dll");
 	char respath[_MAX_PATH];
 	strcpy(respath, hge->Resource_MakePath(""));
 	if(_access(respath, 00) == -1)

@@ -1,12 +1,12 @@
-#include "Process.h"
-#include "Scripter.h"
-#include "BResource.h"
-#include "Data.h"
-#include "DataConnector.h"
-#include "InfoSelect.h"
-#include "Selector.h"
-#include "SE.h"
-#include "DataPrinter.h"
+#include "../Header/Process.h"
+#include "../Header/Scripter.h"
+#include "../Header/BResource.h"
+#include "../Header/Data.h"
+#include "../Header/DataConnector.h"
+#include "../Header/InfoSelect.h"
+#include "../Header/Selector.h"
+#include "../Header/SE.h"
+#include "../Header/DataPrinter.h"
 
 int Process::processResult()
 {

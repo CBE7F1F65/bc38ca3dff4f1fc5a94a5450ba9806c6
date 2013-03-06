@@ -1,8 +1,8 @@
 #ifndef _BGLAYER_H
 #define _BGLAYER_H
 
-#include "MainDependency.h"
-#include "Const.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
 
 #define BG_NONE			0
 #define BG_WHITEFLASH	1

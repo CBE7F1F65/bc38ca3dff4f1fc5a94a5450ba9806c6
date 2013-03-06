@@ -1,7 +1,7 @@
-#include "Player.h"
-#include "SE.h"
-#include "BGLayer.h"
-#include "Process.h"
+#include "../Header/Player.h"
+#include "../Header/SE.h"
+#include "../Header/BGLayer.h"
+#include "../Header/Process.h"
 
 void Player::bombAction()
 {

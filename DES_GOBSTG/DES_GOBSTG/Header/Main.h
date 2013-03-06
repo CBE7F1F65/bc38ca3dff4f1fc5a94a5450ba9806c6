@@ -1,7 +1,7 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
-#include "MainDependency.h"
+#include "../Header/MainDependency.h"
 
 extern HGE * hge;
 

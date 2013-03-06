@@ -1,12 +1,12 @@
-#include "Enemy.h"
-#include "Player.h"
-#include "SE.h"
-#include "Item.h"
-#include "EffectSp.h"
-#include "Scripter.h"
-#include "Chat.h"
-#include "BossInfo.h"
-#include "Process.h"
+#include "../Header/Enemy.h"
+#include "../Header/Player.h"
+#include "../Header/SE.h"
+#include "../Header/Item.h"
+#include "../Header/EffectSp.h"
+#include "../Header/Scripter.h"
+#include "../Header/Chat.h"
+#include "../Header/BossInfo.h"
+#include "../Header/Process.h"
 
 Enemy en[ENEMYMAX];
 

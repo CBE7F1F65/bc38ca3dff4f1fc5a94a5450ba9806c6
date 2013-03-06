@@ -1,8 +1,8 @@
 #ifndef _EXPORT_H
 #define _EXPORT_H
 
-#include "MainDependency.h"
-#include "Const.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
 
 #define	RPYMODE_RANGE		1
 #define	RPYMODE_PRACTICE	2

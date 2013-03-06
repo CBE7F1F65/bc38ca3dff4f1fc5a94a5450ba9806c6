@@ -1,12 +1,12 @@
-#include "Process.h"
-#include "Scripter.h"
-#include "Player.h"
-#include "InfoSelect.h"
-#include "Selector.h"
-#include "Data.h"
-#include "DataConnector.h"
-#include "SE.h"
-#include "BResource.h"
+#include "../Header/Process.h"
+#include "../Header/Scripter.h"
+#include "../Header/Player.h"
+#include "../Header/InfoSelect.h"
+#include "../Header/Selector.h"
+#include "../Header/Data.h"
+#include "../Header/DataConnector.h"
+#include "../Header/SE.h"
+#include "../Header/BResource.h"
 
 int Process::processPlayerSelect()
 {
@@ -150,7 +150,7 @@ int Process::processPlayerSelect()
 				_ifs[i].valueSet(i, _ifs[i].info, 160, 180+20*i, _ifs[i].coltype, _ifs[i].nonactive, _ifs[i].gray);
 				infoselect.push_back(_ifs[i]);
 			}
-			_ifs[i].linki("|12125", totalgot);
+			_ifs[11].linki("|12125", totalgot);
 			strcat(_ifs[11].info, "  /");
 			_ifs[11].linki("|12832", totalopened);
 			strcat(_ifs[11].info, " /");

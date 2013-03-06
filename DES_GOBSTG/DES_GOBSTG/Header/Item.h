@@ -1,7 +1,7 @@
 #ifndef _ITEM_H
 #define _ITEM_H
 
-#include "BObject.h"
+#include "../Header/BObject.h"
 
 class Player;
 

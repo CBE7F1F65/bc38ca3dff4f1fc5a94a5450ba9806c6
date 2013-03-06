@@ -1,9 +1,9 @@
 #ifndef _EFFECTSYS_H
 #define _EFFECTSYS_H
 
-#include "MainDependency.h"
-#include "Const.h"
-#include "BObject.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
+#include "../Header/BObject.h"
 
 #define EFFSYS_AUTOFADEOUT_TIME	120
 

@@ -1,8 +1,8 @@
-#include "Process.h"
-#include "Scripter.h"
-#include "Selector.h"
-#include "InfoSelect.h"
-#include "SE.h"
+#include "../Header/Process.h"
+#include "../Header/Scripter.h"
+#include "../Header/Selector.h"
+#include "../Header/InfoSelect.h"
+#include "../Header/SE.h"
 
 int Process::processOption()
 {

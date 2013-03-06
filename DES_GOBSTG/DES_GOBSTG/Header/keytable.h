@@ -1,7 +1,7 @@
 #ifndef _KEYTABLE_H
 #define _KEYTABLE_H
 
-#include "MainDependency.h"
+#include "../Header/MainDependency.h"
 
 #define SCRIPT_CTOFFSET	0xA000
 

@@ -1,8 +1,8 @@
 #ifndef _SCRIPTER_H
 #define _SCRIPTER_H
 
-#include "MainDependency.h"
-#include "Const.h"
+#include "../Header/MainDependency.h"
+#include "../Header/Const.h"
 #include "keytable.h"
 
 #ifdef __DEBUG

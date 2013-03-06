@@ -1,6 +1,6 @@
-#include "Fontsys.h"
-#include "Main.h"
-#include "Scripter.h"
+#include "../Header/Fontsys.h"
+#include "../Header/Main.h"
+#include "../Header/Scripter.h"
 
 char Fontsys::text[FONTSYSMAX][M_STRMAX];
 HTARGET Fontsys::tar[FONTSYSMAX];

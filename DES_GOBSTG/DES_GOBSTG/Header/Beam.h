@@ -1,7 +1,7 @@
 #ifndef _BEAM_H
 #define _BEAM_H
 
-#include "BObject.h"
+#include "../Header/BObject.h"
 
 #define BEAM_INVALIDSCALE	0.5f
 

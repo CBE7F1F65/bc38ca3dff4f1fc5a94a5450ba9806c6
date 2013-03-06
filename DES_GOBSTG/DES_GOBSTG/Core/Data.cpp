@@ -1,6 +1,6 @@
-#include "Data.h"
-#include "BResource.h"
-#include "Export.h"
+#include "../Header/Data.h"
+#include "../Header/BResource.h"
+#include "../Header/Export.h"
 
 Data data;
 

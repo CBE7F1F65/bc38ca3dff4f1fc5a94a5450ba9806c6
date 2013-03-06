@@ -1,7 +1,7 @@
-#include "Process.h"
-#include "Scripter.h"
-#include "Chat.h"
-#include "DataConnector.h"
+#include "../Header/Process.h"
+#include "../Header/Scripter.h"
+#include "../Header/Chat.h"
+#include "../Header/DataConnector.h"
 
 int Process::frame()
 {

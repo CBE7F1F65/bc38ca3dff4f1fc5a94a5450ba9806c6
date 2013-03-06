@@ -1,7 +1,7 @@
-#include "Item.h"
-#include "Player.h"
-#include "Bullet.h"
-#include "SE.h"
+#include "../Header/Item.h"
+#include "../Header/Player.h"
+#include "../Header/Bullet.h"
+#include "../Header/SE.h"
 
 hgeSprite * Item::spItem[ITEMSPRITEMAX];
 

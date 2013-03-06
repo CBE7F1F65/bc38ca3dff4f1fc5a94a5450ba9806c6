@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fc178dce-2bb0-46d1-b940-a90122c0b639}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ZLIB">
+      <UniqueIdentifier>{3a9434dd-aba6-47cb-81d3-c30a5d73fc9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{362551e1-cbbd-4f15-9b20-64fa196995d3}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ini.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\adler32.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\compress.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\crc32.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\deflate.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\gzio.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\infback.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\inffast.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\inflate.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\inftrees.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\ioapi.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\iowin32.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\mztools.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\trees.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\uncompr.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\unzip.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\zip.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\zutil.c">
+      <Filter>Source Files\ZLIB</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hge.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\hge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hge_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

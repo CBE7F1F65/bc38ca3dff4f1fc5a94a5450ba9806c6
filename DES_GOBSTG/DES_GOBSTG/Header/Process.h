@@ -1,9 +1,9 @@
 #ifndef _PROCESS_H
 #define _PROCESS_H
 
-#include "Main.h"
-#include "Export.h"
-#include "Const.h"
+#include "../Header/Main.h"
+#include "../Header/Export.h"
+#include "../Header/Const.h"
 
 #define KS_UP		keyUp
 #define KS_DOWN		keyDown
